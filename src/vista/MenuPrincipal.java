@@ -63,10 +63,10 @@ public class MenuPrincipal extends JFrame {
             JButton btnEstudiantes = new JButton("Gestión de Estudiantes");
             JButton btnCategorias = new JButton("Gestión de Categorías");
             JButton btnPrestamos = new JButton("Gestión de Préstamos");
+            JButton btnReportes = new JButton("Reportes");
 
-            btnPrestamos.addActionListener(e ->
-                    new GestionPrestamos().setVisible(true)
-            );
+
+
 
             opciones.add(btnPrestamos);
 
@@ -82,9 +82,19 @@ public class MenuPrincipal extends JFrame {
                     new GestionCategorias().setVisible(true)
             );
 
+            btnPrestamos.addActionListener(e ->
+                    new GestionPrestamos().setVisible(true)
+            );
+            btnReportes.addActionListener(e ->
+                    new Reportes().setVisible(true)
+            );
+
+
+
             opciones.add(btnLibros);
             opciones.add(btnEstudiantes);
             opciones.add(btnCategorias);
+            opciones.add(btnReportes);
 
         } else {
 
