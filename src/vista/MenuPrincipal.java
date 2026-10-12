@@ -62,6 +62,13 @@ public class MenuPrincipal extends JFrame {
             JButton btnLibros = new JButton("Gestión de Libros");
             JButton btnEstudiantes = new JButton("Gestión de Estudiantes");
             JButton btnCategorias = new JButton("Gestión de Categorías");
+            JButton btnPrestamos = new JButton("Gestión de Préstamos");
+
+            btnPrestamos.addActionListener(e ->
+                    new GestionPrestamos().setVisible(true)
+            );
+
+            opciones.add(btnPrestamos);
 
             btnLibros.addActionListener(e ->
                     new GestionLibros().setVisible(true)
